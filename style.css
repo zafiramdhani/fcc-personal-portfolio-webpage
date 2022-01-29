@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#navbar {
+  background-color: #734B5E;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
+  padding: 1em 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
+
+#navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+#navbar .collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#navbar .collapse .nav-item {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  margin-left: 3em;
+  text-transform: uppercase;
+}
+
+#navbar .collapse .nav-item:hover {
+  background-color: rosybrown;
+  border-radius: 10px;
+  color: white;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#292E49), to(#536976));
+  background: linear-gradient(to right, #292E49, #536976);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#welcome-section h1 {
+  font-size: 6rem;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#welcome-section p {
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#projects {
+  height: 100%;
+  background-color: #bcbdc0;
+  padding-top: 8em;
+}
+
+#projects .project-tile {
+  margin-bottom: 2em;
+}
+
+#projects .project-tile img:hover {
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#projects h3 {
+  color: #333;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#projects p {
+  font-family: "Poppins", sans-serif;
+  background-color: #565857;
+  color: white;
+  padding: .5em;
+}
+
+@media only screen and (max-width: 992px) {
+  #nav .navbar-brand {
+    font-size: .2rem;
+  }
+  #welcome-section h1 {
+    font-size: 4.2rem;
+  }
+  #welcome-section p {
+    font-size: 1rem;
+  }
+  #projects h3 {
+    font-size: 1.5rem;
+  }
+  #projects p {
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  #projects .project-tile {
+    margin-bottom: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
