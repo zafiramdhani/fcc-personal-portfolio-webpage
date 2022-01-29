@@ -92,6 +92,35 @@ $txtShadow: 3px 3px 10px rgba(0,0,0,.3) ;
   }
 }
 
+#contact {
+  height: 100vh;
+  width: 100%;
+  background-color: #565857;
+  h1 {
+    padding: 2em 0 .5em 0;
+    font-family: $fontFamH1;
+    color: $fontCol1;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+  .row {
+    .col-md-3 {
+      font-size: 1.5rem;
+      padding: .5em;
+      a {
+        text-decoration: none;
+        color: $fontCol1;
+      }
+      &:hover {
+        background-color: #8d4265;
+        border-radius: 10px;
+        box-shadow: $boxShadow;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 992px) {
   #nav {
     .navbar-brand {
@@ -110,5 +139,9 @@ $txtShadow: 3px 3px 10px rgba(0,0,0,.3) ;
     .project-tile {
       margin-bottom: 2em;
     }
+  }
+
+  #contact {
+    h1 {font-size: 2.5rem;}
   }
 }
